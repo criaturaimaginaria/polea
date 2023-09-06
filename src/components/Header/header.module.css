@@ -1,8 +1,21 @@
+.headerContainer{
+  width: 100%;
+  display: flex;
+  max-width: 100em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header {
+    z-index: 5;
+    width: 100%;
+    max-width: 100em;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
     color: #fff;
     padding: 1.2em 3vw 1.2em 3vw;
   }
@@ -23,10 +36,20 @@
     cursor: pointer;
     font-size: 16px;
   }
+
+  .button:hover {
+    background-color: rgba(255, 166, 0, 0.929);
+  }
   
 /* ---MOBILE--- */
 
-  @media (max-width: 768px) {
+  @media (max-width: 450px) {
+
+    .header{
+      display: none;
+    }
+    
+
     .header {
       flex-direction: column;
       text-align: center;

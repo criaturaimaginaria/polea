@@ -20,6 +20,10 @@ const Main = () => {
                         <img src="./images/banner1.jpg"></img>
                     </div>
                 </div>
+                <div className={styles.button2container}>
+                    <button className={styles.button2}>Encuesta</button>
+                </div>
+
             </div>
         </div>
         <div className={styles.layout2}>
