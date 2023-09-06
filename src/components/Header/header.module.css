@@ -18,27 +18,58 @@
     align-items: center;
     color: #fff;
     padding: 1.2em 3vw 1.2em 3vw;
+    text-decoration: none;
   }
   
   .link {
+    position: relative;
     text-decoration: none;
     color: #fff;
     margin-right: 15px;
-    font-size: 16px;
+    font-size: min(1.4vw, 1.4em);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+  }
+  
+/* -------effect underline-------- */
+.link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #e5e5e5;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+  /* ---------------------------- */
+
+.header a{
+    text-decoration: none;
   }
   
   .button {
-    background-color: orange;
+    background-color: #FAA94A;
     color: #fff;
     border: none;
     border-radius: 12px 0px 12px 0px;
-    padding: 10px 20px;
+    padding: 10px 35px;
     cursor: pointer;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
   }
 
   .button:hover {
-    background-color: rgba(255, 166, 0, 0.929);
+    opacity: .95;
   }
   
 /* ---MOBILE--- */

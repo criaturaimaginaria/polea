@@ -53,7 +53,11 @@
 
 .layout1Title h1{
   font-size: min(3.8vw, 3.8em);
+  /* line-height: min(5vw, 5em); */
   color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: medium;
+  margin-bottom: min(1.4vw, 1.4em);
 }
 
 .layout1Title::before{
@@ -62,22 +66,26 @@
   margin-left: min(-1vw, -1em);
   width: min(0.4vw, 0.4em);
   height: min(4.5vw, 4.5em); 
-  background-color: orange; 
+  background-color: #FAA94A
+; 
 }
 
 .button {
-  margin-top:  min(2vw, 2em);
-  background-color: orange;
+  /* margin-top:  min(1vw, 1em); */
+  margin-bottom: min(1.4vw, 1.4em);
+  background-color: #FAA94A;
   color: #fff;
   border: none;
   border-radius: 12px 0px 12px 0px;
-  padding: 10px 20px;
+  padding: 10px 35px;
   cursor: pointer;
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 .button:hover {
-  background-color: rgba(255, 166, 0, 0.929);
+ opacity: .95;
 }
 
 .layout1line{
@@ -196,6 +204,8 @@
 .layout2Title h2{
   font-size: min(2.5vw, 2.5em);
   color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 
@@ -205,7 +215,9 @@
   margin-top: min(1.2vw, 1.2em);
   font-size: min(1.3vw, 1.3em);
   line-height: min(2.1vw, 2.1em);
-  color: #fff;
+  color: #dbdbdb;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 }
 
 
@@ -298,7 +310,8 @@
     margin-left: min(-.6vw, -.6em);
     width: min(0.6vw, 0.6em);
     height: min(7vw, 7em); 
-    background-color: orange; 
+    background-color: #FAA94A
+; 
   }
 
   .layout1line::before{
@@ -350,7 +363,8 @@
     width: 90%;
     margin-top:  min(10vw, 10em);
     margin-bottom:  min(10vw, 10em);
-    background-color: orange;
+    background-color: #FAA94A
+;
     color: #fff;
     border: none;
     border-radius: 12px 0px 12px 0px;
@@ -359,6 +373,8 @@
     font-size: 16px;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
   }
 
   /* ------------------ */
