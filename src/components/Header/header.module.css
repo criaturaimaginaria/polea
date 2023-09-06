@@ -72,6 +72,10 @@
     opacity: .95;
   }
   
+  .mobileHeader{
+    display: none;
+  }
+
 /* ---MOBILE--- */
 
   @media (max-width: 450px) {
