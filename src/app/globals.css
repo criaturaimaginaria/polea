@@ -12,3 +12,76 @@ body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
+
+
+
+
+
+
+
+
+/* ---------------hamburguer button----------------- */
+.hamb1{
+  width: 100%;
+  height: 0.3em;
+  border-radius: 6em;
+  position: absolute;
+  background-color: #fff;
+  transition: .4s;
+}
+.hamb2{
+  width: 100%;
+  height: 0.3em;
+  border-radius: 6em;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .4s;
+}
+.hamb3{
+  width: 50%;
+  bottom: 0%;
+  right: 0%;
+  height: 0.3em;
+  border-radius: 6em;
+  position: absolute;
+  background-color: #fff;
+  transition: .4s;
+}
+
+
+.hamb1active{
+  width: 100%;
+  height: 0.3em;
+  border-radius: 6em;
+  position: absolute;
+  background-color: #fff;
+  transition: .4s;
+  transform: rotate(-40deg);
+  top: 50%;
+  /* transform: translateY(200%); */
+}
+.hamb2active{
+  width: 100%;
+  height: 0.3em;
+  border-radius: 6em;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(40deg);
+  transition: .4s;
+}
+.hamb3active{
+  width: 0%;
+  bottom: 0%;
+  right: 0%;
+  height: 0.3em;
+  border-radius: 6em;
+  position: absolute;
+  background-color: #fff;
+  transition: .4s;
+}
+
+/* --------------------------------------------------- */

@@ -1,8 +1,17 @@
-import React from "react";
+'use client'
+import React, { useState } from 'react';
 import styles from './header.module.css'
 import Link from 'next/link';
 
 const Header = () => {
+
+  const [headerState, setHeaderState] = useState(false);
+
+  const changeState = () => {
+    setHeaderState(!headerState); // Cambia el estado al valor opuesto
+  };
+
+  console.log(headerState, "state")
   return (
     <div className={styles.headerContainer}>
       <div className={styles.header}>
@@ -30,10 +39,10 @@ const Header = () => {
       </div>
       <div className={styles.mobileHeader}>
          <span>Menú</span>
-         <div className={styles.hamburguerContainer}>
-            <div className={styles.hamb1}></div>
-            <div className={styles.hamb2}></div>
-            <div className={styles.hamb3}></div>
+         <div onClick={changeState} className={styles.hamburguerContainer}>
+            <div className={headerState != true ? "hamb1" : "hamb1active"}></div>
+            <div className={headerState != true ? "hamb2" : "hamb2active"}></div>
+            <div className={headerState != true ? "hamb3" : "hamb3active"}></div>
          </div>
       </div>
     </div>
