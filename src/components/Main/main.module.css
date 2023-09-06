@@ -22,6 +22,52 @@
   border-left: 1px solid #fff;
 }
 
+.layout1title{
+  display: flex;
+  justify-content: center;
+  height: 63%;
+  background-color: blueviolet;
+}
+
+.layout1Title{
+  width: 80%;
+}
+
+.layout1line{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 7.5em;
+  height: 7.5vw;
+  background-color: rgba(56, 50, 50, 0.445);
+}
+
+.lineimg1{
+  z-index: 1;
+  position: relative;
+  width: 60%;
+  margin-left: 10%;
+  /* height: 100%; */
+  border-bottom-right-radius: 2.5em;
+}
+
+.lineimg1 img{
+  object-fit: contain;
+  width: 100%;
+  height: auto; 
+  border-bottom-right-radius: 2.5em;
+}
+
+.layout1line::after{
+  content: '';
+  position: absolute;
+  width: 38%;
+  height: 1px;
+  background-color: white; 
+}
+
+/* ------------------------------- */
+
 .layout2{
   display: flex;
   justify-content: center;

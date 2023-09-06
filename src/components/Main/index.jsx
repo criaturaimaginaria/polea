@@ -7,7 +7,19 @@ const Main = () => {
     <div className={styles.main}>
         <div className={styles.layout1}>
             <div className={styles.lineContainer}>
+                <div className={styles.layout1title}>
+                    <div className={styles.layout1Title}>
+                        <h1>Fortalecimiento al Marco Jurídico en Materia
+                            de Cambio Climático a Nivel Federal</h1>
+                        <button>Encuesta</button>
+                    </div>
 
+                </div>
+                <div className={styles.layout1line}>
+                    <div className={styles.lineimg1}>
+                        <img src="./images/banner1.jpg"></img>
+                    </div>
+                </div>
             </div>
         </div>
         <div className={styles.layout2}>
