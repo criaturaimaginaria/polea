@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1.2em 3vw 1.2em 3vw;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  
+  .button {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 12px 0px 12px 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+/* ---MOBILE--- */
+
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .link {
+      margin: 10px 0;
+    }
+  }
