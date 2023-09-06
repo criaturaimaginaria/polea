@@ -28,6 +28,14 @@ const Header = () => {
 
         <button className={styles.button}>Encuesta</button>
       </div>
+      <div className={styles.mobileHeader}>
+         <span className={styles.link}>Menú</span>
+         <div className={styles.hamburguerContainer}>
+            <div className={styles.hamb1}></div>
+            <div className={styles.hamb2}></div>
+            <div className={styles.hamb3}></div>
+         </div>
+      </div>
     </div>
 
   );
