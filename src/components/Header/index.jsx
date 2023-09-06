@@ -21,7 +21,7 @@ const Header = () => {
       <Link href="/contacto">
         <span className={styles.link}>Enlaces</span>
       </Link>
-      <Link href="/contacto">
+      <Link href="/thank">
         <span className={styles.link}>Contáctanos</span>
       </Link>
 

@@ -8,6 +8,9 @@ export default function Home() {
     <main className={styles.main}>
       <Header />
       <Main />
+      <div className={styles.temporal1}>
+
+      </div>
     </main>
   )
 }

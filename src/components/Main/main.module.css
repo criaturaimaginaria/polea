@@ -1,4 +1,5 @@
 .main{
+  position: relative;
   height: 200vh;
   max-height: 200em;
   background-color: rgb(56, 56, 56);
@@ -14,6 +15,7 @@
 }
 
 .lineContainer{
+  position: relative;
   width: 85%;
   max-width: 85em;
   height: 80vh;
@@ -22,9 +24,21 @@
   border-left: 1px solid #fff;
 }
 
+.lineContainer::before{
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+  top: 0;
+  margin-left: -3px;
+  width: 5px;
+  height: 5px;
+  background-color: white; 
+}
+
 .layout1title{
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 63%;
   background-color: blueviolet;
 }
@@ -33,7 +47,37 @@
   width: 80%;
 }
 
+.layout1Title h1{
+  font-size: min(3.8vw, 3.8em);
+  color: #fff;
+}
+
+.layout1Title::before{
+  content: '';
+  position: absolute;
+  margin-left: min(-1vw, -1em);
+  width: min(0.4vw, 0.4em);
+  height: min(4.5vw, 4.5em); 
+  background-color: orange; 
+}
+
+.button {
+  margin-top:  min(2vw, 2em);
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 12px 0px 12px 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: rgba(255, 166, 0, 0.929);
+}
+
 .layout1line{
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -58,6 +102,17 @@
   border-bottom-right-radius: 2.5em;
 }
 
+.layout1line::before{
+  z-index: 4;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 8px solid #fff;
+  border-bottom: 4px solid transparent;
+}
+
 .layout1line::after{
   content: '';
   position: absolute;
@@ -78,11 +133,13 @@
 
 .lineContainer2{
   position: relative;
+  display: flex;
+  /* justify-content: center; */
   width: 85%;
   max-width: 85em;
   height: 80vh;
   max-width: 80em;
-  background-color: rgba(127, 255, 212, 0.436);
+  background-color: rgba(255, 127, 246, 0.436);
   border-left: 1px solid #fff;
 }
 
@@ -95,9 +152,81 @@
   background-color: white; 
 }
 
+.lineContainer2::after{
+  z-index: 8;
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: 0;
+  margin-left: -3px;
+  margin-bottom: -1px;
+  width: 5px;
+  height: 5px;
+  background-color: white; 
+}
+
+.layout2Title{
+  margin-top: min(3vw, 3em);
+  width: 80%;
+  direction: rtl;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout2Title::after{
+  margin-top: min(3vw, 3em);
+  content: '';
+  position: absolute;
+  top: 0px;
+  margin-right: min(-1vw, -1em);
+  width: min(0.4vw, 0.4em);
+  height: min(3.5vw, 3.5em); 
+  background-color: rgb(0, 187, 255); 
+}
+
+.layout2Title h2{
+  font-size: min(2.5vw, 2.5em);
+  color: #fff;
+}
 
 
+
+.layout2Title p{
+  width: 96%;
+  margin-top: min(1.2vw, 1.2em);
+  font-size: min(1.3vw, 1.3em);
+  line-height: min(2.1vw, 2.1em);
+  color: #fff;
+}
+
+
+.plantImage{
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  height: min(25vw, 25em);
+
+  transform: translateY(40%);
+}
   
+.plantImageChild{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 68%;
+  max-width: 68em;
+  border-bottom-right-radius: 2.5em;
+}
+
+
+.plantImageChild img{
+  object-fit:cover;
+  width: 100%;
+  height: 100%; 
+  border-bottom-right-radius: 2.5em;
+}
+
 /* ---MOBILE--- */
 
   @media (max-width: 768px) {
