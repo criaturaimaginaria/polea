@@ -80,6 +80,10 @@
 
   @media (max-width: 450px) {
 
+    .headerContainer{
+      position: relative;
+    }
+
     .header{
       display: none;
     }
@@ -113,6 +117,7 @@
 /* ---------------hamburguer button----------------- */
 
     .hamburguerContainer{
+      z-index: 10;
       position: relative;
       right: 0px;
       width: min(10vw, 10em);
@@ -123,5 +128,7 @@
 
 
 /* --------------------------------------------------- */
+
+
 
   }

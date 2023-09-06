@@ -14,6 +14,10 @@ const Header = () => {
   console.log(headerState, "state")
   return (
     <div className={styles.headerContainer}>
+      <div  className={headerState == true ? "headerMenuActive" : "headerMenu"}>
+          hello
+      </div>
+
       <div className={styles.header}>
         {/* Palabras para hacer clic con enlaces */}
         <Link href="/">
@@ -36,7 +40,7 @@ const Header = () => {
         </Link>
 
         <button className={styles.button}>Encuesta</button>
-      </div>
+      </div>     
       <div className={styles.mobileHeader}>
          <span>Menú</span>
          <div onClick={changeState} className={styles.hamburguerContainer}>
@@ -45,6 +49,7 @@ const Header = () => {
             <div className={headerState != true ? "hamb3" : "hamb3active"}></div>
          </div>
       </div>
+
     </div>
 
   );
