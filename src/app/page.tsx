@@ -14,3 +14,7 @@ export default function Home() {
     </main>
   )
 }
+
+// https://www.figma.com/file/PB5XYjwjaRr4XlbaEOEbxF/POLEA-Landing?type=design&node-id=61-3473&mode=design&t=pVF1Zyt8U7LPYBuL-0
+
+// https://drive.google.com/drive/folders/1lJ0-F5I1Qgwf1wPQ9yOXcBUp5wvmno0m
