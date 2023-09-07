@@ -1,6 +1,6 @@
 'use client'
 import React, {  useState, useEffect } from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importa los estilos del carrousel
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import styles from './comunication.module.css'
 
@@ -9,21 +9,15 @@ const Comunication = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    // Función para actualizar el valor del ancho de la pantalla
     const updateWindowWidth = () => {
       setWindowWidth(window.innerWidth);
     };
-
-    // Agregar un event listener para el evento "resize" del objeto window
     window.addEventListener('resize', updateWindowWidth);
-
-    // Limpieza del event listener al desmontar el componente
     return () => {
       window.removeEventListener('resize', updateWindowWidth);
     };
-  }, []); // El segundo argumento [] indica que el efecto se ejecuta solo una vez al montar el componente
+  }, []); 
 
-  // Determinar si se encuentra en una pantalla móvil (por ejemplo, ancho < 768px)
   const isMobile = windowWidth < 768;
   
   return (
@@ -63,7 +57,6 @@ const Comunication = () => {
         <div className="carousel-item">
           <img src="./images/comunicacion/INF_TRANSVERSALIDAD_02.jpg" alt="Image 3" />
         </div>
-        {/* Agrega más diapositivas según sea necesario */}
       </Carousel>
 
     </div>
