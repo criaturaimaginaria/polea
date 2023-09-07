@@ -62,7 +62,7 @@
 }
 
 .cardContent{
-  margin: 2vw;
+  margin:min(2vw, 2em);
 }
 
 
@@ -101,9 +101,80 @@
 
 
 
+/* ----------tablets------------- */
+
+/* 
+@media (max-width: 770px) {
+  .eventsCardContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+
+} */
+
 
   @media (max-width: 450px) {
 
+    .Envents{
+      width: 80%;
+      max-width: 80em;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    
+    .EventsTitle p{
+      font-size: min(5vw, 5em);
+      margin-left:  min(3vw, 3em);
+    }
 
+    .EventsTitle p::before{
+      margin-left: min(-0.5vw, -0.5em);
+      width: min(0.5vw, 0.5em);
+      height: min(6.5vw, 6.5em); 
+    }
+    
+    .card{
+      border-bottom-right-radius: min(7vw, 7em);
+    }
+
+    .cardContent{
+      margin: min(7vw, 7em);
+    }
+
+    .cardContent h2{
+      color: #0A2950;
+      font-size: min(4.5vw, 4.5em);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      margin-bottom: min(1.3vw, 1.3em);
+    }
+    
+    .cardContent p{
+      color: #0A2950;
+      font-size: min(3.6vw, 3.6em);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      margin-bottom: min(1vw, 1em);
+    }
+    
+    .cardLink{
+      margin-bottom:min(1.5vw, 1.5em);
+    }
+    
+    .cardLink img{
+      margin-right:min(2vw, 2em);
+      transform: translateY(30%);
+    }
+    .cardLink a{
+      color: #0A2950;
+      font-size: min(3.5vw, 3.5em);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
 
   }
