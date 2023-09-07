@@ -93,21 +93,35 @@
 }
 
 .popUpCard{
-  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ border: 1px solid #0A2950;
+ border-bottom-right-radius:min(2.5vw, 2.5em);
+  background-color: #de2121;
   width: 30vw;
   max-width: 30em;
   height: auto;
 }
 
-.closeButton {
-  top: 10px;
-  right: 10px;
+.buttonContainer{
+  display: flex;
   cursor: pointer;
-  background: none;
-  border: none;
-  font-size: 16px;
-  color: rgb(211, 3, 3);
+  width: 100%;
+}
 
+.closeButton {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right:min(0.8vw, 0.8em);
+  margin-top:min(0.8vw, 0.8em);
+  width: min(1.5vw, 1.5em);
+  height: min(1.5vw, 1.5em);
+}
+
+.closeButton img{
+  width: 100%;
+  height: 100%;
 }
 
 .moreButton {
@@ -125,7 +139,17 @@
   font-weight: 600;
 }
 
+.linkscontainer{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.linksImg{
+  width: min(2.2vw, 2.2em);
+  height: min(2.2vw, 2.2em);
+  transform: translateY(20%);
+}
 
 /* ---MOBILE--- */
 

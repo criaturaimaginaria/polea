@@ -118,17 +118,25 @@ function Proposals() {
       {isPopupVisible && (
         <div className={styles.popUp}>
           <div className={styles.popUpCard}>
-            <button className={styles.closeButton} onClick={closePopup}>Cerrar</button>
-            <p>{elementos[expandedIndex].contenido}</p>
-            <ul>
-              {elementos[expandedIndex].links.map((link, i) => (
-                <li key={i}>
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    {link.texto}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <div className={styles.buttonContainer}>
+              <div className={styles.closeButton} onClick={closePopup}>
+                  <img src="./images/closeButton.svg"></img>
+              </div>
+            </div>
+            <div className={styles.linkscontainer}>
+              <p>{elementos[expandedIndex].contenido.substring(3)}</p>
+              
+                {elementos[expandedIndex].links.map((link, i) => (
+                  <div className={styles.popUpLinks} key={i}>
+                    <img className={styles.linksImg} src="./images/clip.svg"></img>
+                    <a href={link.url} target="_blank" rel="noopener noreferrer">
+                      {link.texto}
+                    </a>
+                  </div>
+
+                ))}
+            </div>
+
           </div>
 
         </div>
