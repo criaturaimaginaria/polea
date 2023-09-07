@@ -14,9 +14,9 @@ body {
 }
 
 
-
-
-
+.carousel-item {
+  margin: 2vw; /* Margen entre las imágenes */
+}
 
 
 
