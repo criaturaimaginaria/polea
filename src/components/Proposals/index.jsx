@@ -94,17 +94,21 @@ function Proposals() {
     <div className={styles.container}>
       <div className={styles.wrapContainer}>
           <div className={styles.docElement}>
-            <b>Documentos</b>
-            <p>Panorama del cambio climático</p>
+            <p>Documentos</p>
+            <span>Panorama del cambio climático</span>
           </div>
         {elementos.map((elemento, index) => (
           <div key={index} className={styles.element}>
-            <p>{elemento.contenido}</p>
-            {index >= 0 && (
-              <button className={styles.moreButton} onClick={() => toggleContent(index)}>
-                {expandedIndex === index ? "Ver Menos" : "Ver Más"}
-              </button>
-            )}
+            <div className={styles.elementChild}>
+              <p>{elemento.contenido}</p>
+              <img src="./images/arrow.svg"></img>
+              {index >= 0 && (
+                <button className={styles.moreButton} onClick={() => toggleContent(index)}>
+                  {expandedIndex === index ? "Ver Menos" : "Ver Más"}
+                </button>
+              )}              
+            </div>
+
           </div>
         ))}
       </div>
