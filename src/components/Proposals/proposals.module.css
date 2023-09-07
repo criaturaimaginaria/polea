@@ -1,0 +1,86 @@
+.container {
+  /* position: relative; */
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.wrapContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.docElement{
+  background-color: rgb(34, 255, 0);
+}
+
+.element {
+  background-color: rgb(21, 0, 255);
+  /* margin: 20px;
+  padding: 20px; */
+  position: relative;
+}
+
+.popUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
+
+.popUpCard{
+  background-color: #fff;
+  width: 30vw;
+  max-width: 30em;
+  height: auto;
+}
+
+.closeButton {
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: rgb(211, 3, 3);
+
+}
+
+.moreButton {
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: rgb(255, 0, 115);
+  text-decoration: underline;
+}
+
+
+
+/* ---MOBILE--- */
+
+@media (max-width: 768px) {
+  .wrapContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+
+}

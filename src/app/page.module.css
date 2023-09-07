@@ -3,6 +3,16 @@
 }
 
 .temporal1{
-    height: 100vh;
+    height: 25vh;
     background-color: antiquewhite;
 }
+
+/* ---MOBILE--- */
+
+@media (max-width: 768px) {
+    .temporal1{
+        height: 15vh;
+        background-color: antiquewhite;
+    }
+    
+  }
