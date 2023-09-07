@@ -98,10 +98,14 @@
   flex-direction: column;
  border: 1px solid #0A2950;
  border-bottom-right-radius:min(2.5vw, 2.5em);
-  background-color: #de2121;
-  width: 30vw;
-  max-width: 30em;
+  background-color: #fff;
+  width: auto;
+  max-width: auto;
   height: auto;
+  padding-top: min(0vw, 0em);
+  padding-right: min(1vw, 1em);
+  padding-left: min(1vw, 1em);
+  padding-bottom: min(0.2vw, 0.2em);
 }
 
 .buttonContainer{
@@ -113,7 +117,7 @@
 .closeButton {
   cursor: pointer;
   margin-left: auto;
-  margin-right:min(0.8vw, 0.8em);
+  /* margin-right:min(0.8vw, 0.8em); */
   margin-top:min(0.8vw, 0.8em);
   width: min(1.5vw, 1.5em);
   height: min(1.5vw, 1.5em);
@@ -140,15 +144,46 @@
 }
 
 .linkscontainer{
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin: min(2vw, 2em);
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.linkscontainer p{
+  color: #0A2950;
+  font-size: min(1.6vw, 1.6em);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-left: min(0.7vw, 0.7em);
+  margin-bottom: min(2vw, 2em);
+}
+
+.linkscontainer::before{
+  content: '';
+  position: absolute;
+  margin-left: min(-0.3vw, -0.3em);
+  width: min(0.3vw, 0.3em);
+  height: min(2.2vw, 2.2em); 
+  background-color: #FAA94A
+; 
 }
 
 .linksImg{
-  width: min(2.2vw, 2.2em);
-  height: min(2.2vw, 2.2em);
+  width: min(1.7vw, 1.7em);
+  height: min(1.7vw, 1.7em);
   transform: translateY(20%);
+  display: inline;
+  margin-right: min(0.8vw, 0.8em);
+}
+
+.popUpLinks a{
+  color: #0A2950;
+  font-size: min(1vw, 1em);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  display:inline-flex; 
+  margin-bottom:min(1vw, 1em);
 }
 
 /* ---MOBILE--- */

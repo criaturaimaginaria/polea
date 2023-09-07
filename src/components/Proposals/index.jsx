@@ -130,7 +130,7 @@ function Proposals() {
                   <div className={styles.popUpLinks} key={i}>
                     <img className={styles.linksImg} src="./images/clip.svg"></img>
                     <a href={link.url} target="_blank" rel="noopener noreferrer">
-                      {link.texto}
+                     <span>{link.texto}</span> 
                     </a>
                   </div>
 
