@@ -1,49 +1,48 @@
 'use client'
-import React, {  useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import styles from './comunication.module.css'
 
 const Comunication = () => {
-
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const updateWindowWidth = () => {
       setWindowWidth(window.innerWidth);
     };
+
+    // Agrega un event listener cuando el componente se monta
     window.addEventListener('resize', updateWindowWidth);
+
+    // Limpia el event listener cuando el componente se desmonta
     return () => {
       window.removeEventListener('resize', updateWindowWidth);
     };
-  }, []); 
+  }, []); // El segundo argumento [] asegura que el efecto solo se ejecute una vez al montar el componente
 
   const isMobile = windowWidth < 768;
-  
+
   return (
     <div className={styles.carouselContainer}>
-
-    <div className={styles.materials}>
+      <div className={styles.materials}>
         <div className={styles.materialsText}>
           <h2>Materiales de Comunicación</h2>
-          <p>Los siguientes materiales gráficos son una herramienta 
-            esencial para conocer los aspectos clave relacionados con el 
-            cambio climático </p>
+          <p>Los siguientes materiales gráficos son una herramienta esencial para conocer los aspectos clave relacionados con el cambio climático</p>
         </div>
-    </div>
+      </div>
 
-      <Carousel 
+      <Carousel
         infiniteLoop={true}
         centerMode={true}
-        centerSlidePercentage={isMobile ? 100 : 60} // Personaliza el porcentaje de separación
+        centerSlidePercentage={isMobile ? 100 : 60}
         showStatus={false}
         showThumbs={false}
-        autoPlay={true} // Habilita la reproducción automática
+        autoPlay={true}
         interval={5000}
-
-        showArrows={true} // Oculta las flechas de navegación
-        emulateTouch={true} // Habilita la navegación táctil en dispositivos móviles
-        showIndicators={true} 
+        showArrows={true}
+        emulateTouch={true}
+        showIndicators={true}
       >
         <div className="carousel-item">
           <img src="./images/comunicacion/INF_TRANSVERSALIDAD_02.jpg" alt="Image 1" />
@@ -58,9 +57,7 @@ const Comunication = () => {
           <img src="./images/comunicacion/INF_TRANSVERSALIDAD_02.jpg" alt="Image 3" />
         </div>
       </Carousel>
-
     </div>
-
   );
 };
 
