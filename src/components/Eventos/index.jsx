@@ -1,24 +1,15 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import styles from './events.module.css'
+import useWindowSize from "@/hooks/useWindowSize";
 
 
 const Eventos = () => {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const windowSize = useWindowSize();
 
-    useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768);
-      };
-  
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
-  
+
+
     const cards = [
         {
           title: 'Evento 1',
@@ -42,7 +33,7 @@ const Eventos = () => {
       ];
 
 
-const renderedCards = isMobile ? [cards[0]] : cards; // Muestra solo el primer elemento en pantallas móviles
+const renderedCards = windowSize.width < 768 ? [cards[0]] : cards; // Muestra solo el primer elemento en pantallas móviles
 
 
   return (

@@ -1,28 +1,17 @@
 'use client'
 import React,{useState, useRef, useContext, useEffect}  from 'react'
 import styles from './footer.module.css'
+import useWindowSize from "@/hooks/useWindowSize";
 
 
 const Footer = () => {
+
+    const windowSize = useWindowSize();
 
     const [sent, setSent] = useState(false)
     const [inputValue, setInputValue] = useState("");
     const [inputValu2, setInputValue2] = useState("");
     const [inputValu3, setInputValue3] = useState("");
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 460); 
-
-    useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768); 
-      };
-  
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
 
 
     const initialData = [
@@ -91,7 +80,7 @@ const Footer = () => {
         setShowMore(!showMore);
       };
     
-    const mobileStatus = isMobile ? 5 : 10;
+    const mobileStatus = windowSize.width < 460 ? 5 : 10;
 
   return (
     <div className={styles.Footer}>
