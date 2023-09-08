@@ -15,43 +15,43 @@ const Header = () => {
   return (
     <div className={styles.headerContainer}>
       <div  className={headerState == true ? "headerMenuActive" : "headerMenu"}>
-        <Link href="/">
+        <Link href="/#intro">
           <span className={styles.link}>Introducción</span>
         </Link>
-        <Link href="/servicios">
+        <Link href="/#documentos">
           <span className={styles.link}>Documentos</span>
         </Link>
-        <Link href="/productos">
+        <Link href="/#comunicacion">
           <span className={styles.link}>Infórmate</span>
         </Link>
-        <Link href="/acerca">
+        <Link href="/#eventos">
           <span className={styles.link}>Eventos</span>
         </Link>
-        <Link href="/contacto">
+        <Link href="/#enlaces">
           <span className={styles.link}>Enlaces</span>
         </Link>
-        <Link href="/thank">
+        <Link href="/#contact">
           <span className={styles.link}>Contáctanos</span>
         </Link>
       </div>
 
       <div className={styles.header}>
-        <Link href="/">
+        <Link href="/#intro">
           <span className={styles.link}>Introducción</span>
         </Link>
-        <Link href="/servicios">
+        <Link href="/#documentos">
           <span className={styles.link}>Documentos</span>
         </Link>
-        <Link href="/productos">
+        <Link href="/#comunicacion">
           <span className={styles.link}>Infórmate</span>
         </Link>
-        <Link href="/acerca">
+        <Link href="/#eventos">
           <span className={styles.link}>Eventos</span>
         </Link>
-        <Link href="/contacto">
+        <Link href="/#enlaces">
           <span className={styles.link}>Enlaces</span>
         </Link>
-        <Link href="/thank">
+        <Link href="/#contact">
           <span className={styles.link}>Contáctanos</span>
         </Link>
 

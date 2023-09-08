@@ -95,13 +95,13 @@ const Footer = () => {
     const mobileStatus = windowSize.width < 460 ? 5 : 10;
 
   return (
-    <div className={styles.Footer}>
+    <div id='enlaces' className={styles.Footer}>
         <div className={styles.linksContainer}>
             <div className={styles.linksFather}>
                 <div className={styles.fillContainer}>
 
                 </div>
-                <div className={styles.ligasContainer}>
+                <div id='enlaces' className={styles.ligasContainer}>
                     <div className={styles.titleContainer}>
                         <h2>Ligas de Interés</h2>
                         <p>Infórmate acerca de los aspectos fundamentales, aplicaciones y beneficios 
@@ -127,7 +127,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className={styles.contactContainer}>
+        <div id='contact' className={styles.contactContainer}>
             <div className={styles.contact}>
                 <div className={styles.contactForm}>
                     <form action="https://formsubmit.co/valkjavalkja2@gmail.com" method="POST">

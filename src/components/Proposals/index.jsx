@@ -91,7 +91,7 @@ function Proposals() {
   const isPopupVisible = expandedIndex !== null;
 
   return (
-    <div className={styles.container}>
+    <div id='documentos' className={styles.container}>
       <div className={styles.wrapContainer}>
           <div className={styles.docElement}>
             <p>Documentos</p>

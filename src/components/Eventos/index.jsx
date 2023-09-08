@@ -37,7 +37,7 @@ const renderedCards = windowSize.width < 768 ? [cards[0]] : cards; // Muestra so
 
 
   return (
-    <div className={styles.EventsContainer}>
+    <div id='eventos' className={styles.EventsContainer}>
       <div className={styles.Envents}>
         <div className={styles.EventsTitle}>
           <p>Eventos</p>

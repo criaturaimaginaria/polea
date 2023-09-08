@@ -26,7 +26,7 @@ const Main = () => {
 
             </div>
         </div>
-        <div className={styles.layout2}>
+        <div id="intro" className={styles.layout2}>
             <div className={styles.lineContainer2}>
                <div className={styles.layout2Title}>
                     <h2>Fortaleciendo el Futuro Verde de México</h2>

@@ -11,7 +11,7 @@ const Comunication = () => {
 
 
   return (
-    <div className={styles.carouselContainer}>
+    <div id='comunicacion' className={styles.carouselContainer}>
       <div className={styles.materials}>
         <div className={styles.materialsText}>
           <h2>Materiales de Comunicación</h2>
