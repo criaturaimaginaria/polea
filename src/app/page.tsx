@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import { Header, Main, Proposals, Comunication, Eventos} from "../components";
+import { Header, Main, Proposals, Comunication, Eventos, Footer} from "../components";
 import Link from 'next/link';
 
 export default function Home() {
@@ -12,7 +12,8 @@ export default function Home() {
       <Proposals />
       <Comunication />
       <Eventos />
-      <div className={styles.temporal2}></div>
+      <Footer />
+      {/* <div className={styles.temporal2}></div> */}
     </main>
   )
 }
