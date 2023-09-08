@@ -8,7 +8,6 @@ import useWindowSize from "@/hooks/useWindowSize";
 const Comunication = () => {
 
   const windowSize = useWindowSize();
-  console.log(windowSize.width,"size")
 
 
   return (

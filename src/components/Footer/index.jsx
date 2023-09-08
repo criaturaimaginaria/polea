@@ -17,59 +17,71 @@ const Footer = () => {
     const initialData = [
         { 
             title: 'Biblioteca de recursos del Instituto Nacional de Ecología y Cambio Climático', 
-            link: 'https://example.com/1' 
-        },
-        { 
-            title: 'Biblioteca digital de Cambio Climático', 
-            link: 'https://example.com/2' 
+            link: 'http://elcambioclimaticodefrente.inecc.gob.mx/biblioteca_de_recursos#descargables' 
         },
         { 
             title: 'Explorador de cambio climático y biodiversidad (ECCBio)', 
-            link: 'https://example.com/3' 
+            link: 'https://servicios.conabio.gob.mx/ECCBio/' 
         },
         { 
             title: 'Sistema Nacional de Indicadores Ambientales', 
-            link: 'https://example.com/4' 
+            link: 'https://apps1.semarnat.gob.mx:8443/dgeia/clave20/index.html' 
         },
         { 
             title: 'Inventario Nacional de Emisiones de Gases y Compuestos de Efecto Invernadero (INEGyCEI)', 
-            link: 'https://example.com/5' 
+            link: 'https://datos.gob.mx/busca/dataset/inventario-nacional-de-emisiones-de-gases-y-compuestos-de-efecto-invernadero-inegycei' 
         },
         { 
             title: 'Página oficial del Sistema Nacional de Cambio Climático (SINACC)', 
-            link: 'https://example.com/6' 
+            link: 'https://cambioclimatico.gob.mx/' 
         },
         { 
             title: 'Diccionario de Medio Ambiente', 
-            link: 'https://example.com/7' 
+            link: 'http://ideinfoteca.semarnat.gob.mx/website/diccionario/v2019/index.html' 
         },
         { 
             title: 'Atlas Nacional de Vulnerabilidad al Cambio Climático', 
-            link: 'https://example.com/8' 
+            link: 'https://atlasvulnerabilidad.inecc.gob.mx/' 
         },
         { 
             title: 'Página del Sistema Nacional de Información Ambiental y de Recursos Naturales', 
-            link: 'https://example.com/9' 
+            link: 'https://www.gob.mx/semarnat/acciones-y-programas/sistema-nacional-de-informacion-ambiental-y-de-recursos-naturales' 
         },
         { 
             title: 'Página de la Convención Marco de las Naciones Unidas sobre el Cambio Climático ', 
-            link: 'https://example.com/10'
+            link: 'https://unfccc.int/es/process-and-meetings/the-convention/que-es-la-convencion-marco-de-las-naciones-unidas-sobre-el-cambio-climatico'
          },
         { 
             title: 'Catálogo de cursos de Cambio Climático de las Naciones Unidas', 
-            link: 'https://example.com/10'
+            link: 'https://unccelearn.org/courses/?language=es'
          },
         { 
             title: 'Biblioteca digital de Cambio Climático', 
-            link: 'https://example.com/8' 
+            link: 'http://140.84.163.2:8080/xmlui/discover' 
         },
         { 
             title: 'Página del Programa de Investigación en Cambio Climático (PINCC) de la UNAM', 
-            link: 'https://example.com/9' 
+            link: 'https://www.pincc.unam.mx/' 
         },
         { 
             title: 'Página de Sistema de Comercio de Emisiones de Política y Legislación Ambiental POLEA', 
-            link: 'https://example.com/10'
+            link: 'https://www.polea.org.mx/sce/'
+         },
+         { 
+            title: 'Página del programa “CityAdapt” de las Naciones Unidas para incrementar la resiliencia climática de las ciudades mediante SbN', 
+            link: 'https://cityadapt.com/'
+         },
+         { 
+            title: 'Página del Panel Intergubernamental de Expertos sobre el Cambio Climático (IPCC)', 
+            link: 'http://www.ipcc.ch/home_languages_main_spanish.shtml'
+         },
+         { 
+            title: 'Página del Inventario Homologado Preliminar de Presas de Jales ', 
+            link: 'https://geomaticaportal.semarnat.gob.mx/arcgisp/apps/webappviewer/index.html?id=95841aa3b6534cdfbe3f53b3b5d6edfa'
+         },
+         { 
+            title: 'Mapa del Espacio Digital Geográfico ESDIG', 
+            link: 'https://gisviewer.semarnat.gob.mx/geointegrador2Beta/index.html'
          },
       ];
     
