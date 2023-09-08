@@ -113,8 +113,13 @@ body {
 /* ------------------------Header Menu----------------------- */
 
 .headerMenu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
   z-index: 5;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   right: -100vw;
@@ -123,14 +128,35 @@ body {
 }
 
 .headerMenuActive{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
   z-index: 5;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   right: 0vw;
   /* margin-right: 100vw; */
-  background-color: #0f1430cc;
+  background-color: #0f1430fb;
   transition: 1s;
 }
+
+.headerMenu span{
+  list-style: none;
+  font-size: min(6.5vw, 6.5em);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.headerMenuActive span{
+  list-style: none;
+  font-size: min(6.5vw, 6.5em);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+
 
 /* --------------------------------------------------- */

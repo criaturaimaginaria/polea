@@ -130,10 +130,8 @@ const Footer = () => {
                     <form action="https://formsubmit.co/valkjavalkja2@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false"></input>
                             <input type="hidden" name="_next" value="https://personal-page-phi-seven.vercel.app/ThankYou" ></input>
-                        <div >
+                        <div className={styles.formNames}>
                             <input className={styles.imp1} id='ch' type="text" name="name"  placeholder={"name"} required onChange={(e) => setInputValue(e.target.value)}></input>
-                        </div>
-                        <div>
                             <input className={styles.imp2}id='ch' type='email' name="email" placeholder={"email"} required  onChange={(e) => setInputValue2(e.target.value)}></input>
                         </div>
                         <div>
