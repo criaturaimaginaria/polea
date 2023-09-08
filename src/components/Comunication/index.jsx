@@ -3,25 +3,13 @@ import React, { useState, useEffect } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import styles from './comunication.module.css'
+import useWindowSize from "@/hooks/useWindowSize";
 
 const Comunication = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const updateWindowWidth = () => {
-      setWindowWidth(window.innerWidth);
-    };
+  const windowSize = useWindowSize();
+  console.log(windowSize.width,"size")
 
-    // Agrega un event listener cuando el componente se monta
-    window.addEventListener('resize', updateWindowWidth);
-
-    // Limpia el event listener cuando el componente se desmonta
-    return () => {
-      window.removeEventListener('resize', updateWindowWidth);
-    };
-  }, []); // El segundo argumento [] asegura que el efecto solo se ejecute una vez al montar el componente
-
-  const isMobile = windowWidth < 768;
 
   return (
     <div className={styles.carouselContainer}>
@@ -35,7 +23,7 @@ const Comunication = () => {
       <Carousel
         infiniteLoop={true}
         centerMode={true}
-        centerSlidePercentage={isMobile ? 100 : 60}
+        centerSlidePercentage={windowSize.width < 470 ? 100 : 60}
         showStatus={false}
         showThumbs={false}
         autoPlay={true}
