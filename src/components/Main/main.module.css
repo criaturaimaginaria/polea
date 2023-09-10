@@ -196,8 +196,11 @@
   position: absolute;
   top: 0px;
   margin-right: min(-1vw, -1em);
+  /* width: min(0.4vw, 0.4em);
+  height: min(3.5vw, 3.5em);  */
+
   width: min(0.4vw, 0.4em);
-  height: min(3.5vw, 3.5em); 
+  height: min(4.5vw, 4.5em); 
   background-color: rgb(0, 187, 255); 
 }
 
@@ -308,8 +311,10 @@
     content: '';
     position: absolute;
     margin-left: min(-.6vw, -.6em);
-    width: min(0.6vw, 0.6em);
+
+    width: min(1.2vw, 1.2em);
     height: min(7vw, 7em); 
+    
     background-color: #FAA94A
 ; 
   }

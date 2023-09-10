@@ -38,7 +38,7 @@
   position: absolute;
   margin-left: min(-0.7vw, -0.7em);
   width: min(0.4vw, 0.4em);
-  height: min(3vw, 3em); 
+  height: min(3vw, 1.7em); 
   background-color: #FAA94A; 
 }
 
