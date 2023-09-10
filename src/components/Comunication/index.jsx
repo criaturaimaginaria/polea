@@ -29,7 +29,7 @@ const Comunication = () => {
         interval={5000}
         showArrows={true}
         emulateTouch={true}
-        showIndicators={true}
+        showIndicators={false}
       >
         <div className="carousel-item">
           <img src="./images/comunicacion/INF_TRANSVERSALIDAD_02.jpg" alt="Image 1" />
@@ -38,7 +38,7 @@ const Comunication = () => {
           <img src="./images/comunicacion/INF_N_CARBONO.jpg" alt="Image 2" />
         </div>
         <div className="carousel-item">
-          <img src="./images/comunicacion/INF_ADAPTACION.jpg" alt="Image 3" />
+          <img src="./images/comunicacion/INF_JC.jpg" alt="Image 3" />
         </div>
         <div className="carousel-item">
           <img src="./images/comunicacion/INF_TRANSVERSALIDAD_02.jpg" alt="Image 3" />

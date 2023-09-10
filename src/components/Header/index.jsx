@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './header.module.css'
 import Link from 'next/link';
 
@@ -7,30 +7,45 @@ const Header = () => {
 
   const [headerState, setHeaderState] = useState(false);
 
+
   const changeState = () => {
-    setHeaderState(!headerState); // Cambia el estado al valor opuesto
+
+    if (headerState) {
+      document.body.style.overflow = 'auto';
+      document.body.style.position = 'static';
+      document.body.style.height = 'auto';
+    } else {
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.height = '100%';
+    }
+    setHeaderState(!headerState); 
+
   };
 
-  console.log(headerState, "state")
+
+
+
+
   return (
     <div className={styles.headerContainer}>
       <div  className={headerState == true ? "headerMenuActive" : "headerMenu"}>
-        <Link href="/#intro">
+        <Link onClick={changeState} href="/#intro">
           <span className={styles.link}>Introducción</span>
         </Link>
-        <Link href="/#documentos">
+        <Link onClick={changeState} href="/#documentos">
           <span className={styles.link}>Documentos</span>
         </Link>
-        <Link href="/#comunicacion">
+        <Link onClick={changeState} href="/#comunicacion">
           <span className={styles.link}>Infórmate</span>
         </Link>
-        <Link href="/#eventos">
+        <Link onClick={changeState} href="/#eventos">
           <span className={styles.link}>Eventos</span>
         </Link>
-        <Link href="/#enlaces">
+        <Link onClick={changeState} href="/#enlaces">
           <span className={styles.link}>Enlaces</span>
         </Link>
-        <Link href="/#contact">
+        <Link onClick={changeState} href="/#contact">
           <span className={styles.link}>Contáctanos</span>
         </Link>
       </div>
