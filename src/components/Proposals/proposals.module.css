@@ -22,7 +22,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+
 }
+
+
+
 
 .docElement p{
   color: #0A2950;
@@ -60,6 +64,12 @@
   padding: 20px; */
   position: relative;
   margin:min(2vw, 2em);
+  transition: transform 0.2s ease;
+}
+
+.element:hover {
+  cursor: pointer;
+  transform: scale(1.04); 
 }
 
 .elementChild{
@@ -226,6 +236,11 @@
     flex-direction: column;
     border-bottom-right-radius:min(14vw, 14em);
     margin:min(2vw, 2em);
+  }
+
+  .element:hover {
+    cursor: pointer;
+    transform: scale(1);
   }
   
   .elementChild{

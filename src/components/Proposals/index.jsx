@@ -98,7 +98,7 @@ function Proposals() {
             <span>Panorama del cambio climático</span>
           </div>
         {elementos.map((elemento, index) => (
-          <div key={index} className={styles.element}>
+          <div  key={index} className={styles.element} onClick={() => toggleContent(index)}>
             <div className={styles.elementChild}>
               <p>{elemento.contenido}</p>
               <img src="./images/arrow.svg"></img>
