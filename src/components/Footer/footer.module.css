@@ -55,7 +55,8 @@
 
 /* esto es solo espacio en blanco */
 .fillContainer{
-    height: 20vw;
+    height: 22vw;
+    max-height: 22em;
     max-width: 20em;
 }
 
@@ -342,7 +343,7 @@
 
     /* esto es solo espacio en blanco */
     .fillContainer{
-        height: 55vw;
+        height: 60vw;
         /* max-width: 20em; */
     }
 
