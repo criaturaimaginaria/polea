@@ -362,6 +362,7 @@
 .button2container{
   display: flex;
   width: 100%;
+  margin-bottom: 5vw;
   /* background-color: aqua; */
 }
 
@@ -412,12 +413,12 @@
 
 .layout2Title{
   height: auto;
-  margin-top: min(6vw, 6em);
+  margin-top: min(10vw, 10em);
   width: 94%;
 }
 
 .layout2Title::after{
-  margin-top: min(6vw, 6em);
+  margin-top: min(11vw, 11em);
   content: '';
   position: absolute;
   top: 0px;

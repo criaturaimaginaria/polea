@@ -344,10 +344,13 @@
 
     /* esto es solo espacio en blanco */
     .fillContainer{
-        height: 60vw;
+        height: 70vw;
         /* max-width: 20em; */
     }
 
+    .contactContainer{
+        margin-top: 10vw;
+    }
 
     .links ul{
         /* display: flex;
