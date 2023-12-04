@@ -348,6 +348,11 @@
   .popUpLinks a{
     font-size: min(3.2vw, 3.2em);
     margin-bottom:min(4vw, 4em);
+
+    white-space: nowrap;      
+    overflow: hidden;        
+    text-overflow: ellipsis;  
+    max-width: 70vw;   
   }
 
 }
