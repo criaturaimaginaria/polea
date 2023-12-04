@@ -8,37 +8,37 @@ const Eventos = () => {
 
 const cards = [
   {
-    title: 'Evento 1',
+    title: 'Memoria Foro acción climática Agroforestal',
+    text: 'El miércoles 14 de junio de 2023, a partir de las 9:30 horas, en la Sala Mural del H. Congreso del Estado de Chiapas, ....',
+    img: './images/pen.png',
+    enlace: 'https://drive.google.com/file/d/1LnBkm6jC83ChDA6_5UrAqpli784Tq9Jv/view?usp=sharing',
+  },
+  {
+    title: 'Nuevos eventos próximamente...',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: './images/pen.png',
     enlace: 'enlace.comm',
   },
   {
-    title: 'Evento 2',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: './images/pen.png',
-    enlace: 'enlace.comm',
-  },
-  {
-    title: 'Evento 3',
+    title: 'Nuevos eventos próximamente...',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: './images/plants.png',
     enlace: 'enlace.comm',
   },
   {
-    title: 'Evento 4',
+    title: 'Nuevos eventos próximamente...',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: './images/pen.png',
     enlace: 'enlace.comm',
   },
   {
-    title: 'Evento 5',
+    title: 'Nuevos eventos próximamente...',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: './images/plants.png',
     enlace: 'enlace.comm',
   },
   {
-    title: 'Evento 6',
+    title: 'Nuevos eventos próximamente...',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     img: './images/pen.png',
     enlace: 'enlace.comm',

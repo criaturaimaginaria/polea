@@ -104,6 +104,9 @@
 
 
 .card{
+  width: 23vw;
+  max-width: 23em;
+
   height: auto;
   background-color: #fff;
   border: 1px solid #0A2950;
@@ -219,6 +222,8 @@
     }
     
     .card{
+      width: 80vw;
+      max-width: 80em;
       border-bottom-right-radius: min(7vw, 7em);
     }
 
