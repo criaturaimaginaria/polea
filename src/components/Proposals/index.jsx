@@ -7,15 +7,14 @@ const elementos = [
   {
     contenido: "01. Marco Internacional",
     links: [
-      { texto: '¿Acuerdo de Escazú ING y ESP', url: 'https://www.ejemplo1.com' },
-      { texto: 'Acuerdo de París', url: 'https://www.ejemplo2.com' },
-      { texto: 'CITIES', url: 'https://www.ejemplo3.com' },
-      { texto: 'CMNUCC', url: 'https://www.ejemplo4.com' },
-      { texto: 'Infografía ODS 13', url: 'https://www.ejemplo5.com' },
-      { texto: 'Informe ODS 2019', url: 'https://www.ejemplo6.com' },
-      { texto: 'IPCC_2022', url: 'https://www.ejemplo7.com' },
-      { texto: 'IPCC_AR6_WGII_SummaryForPolicymakers', url: 'https://www.ejemplo8.com' },
-      { texto: 'Paris', url: 'https://www.ejemplo8.com' },
+      { texto: 'Acuerdo de Escazú ING y ESP', url: 'https://drive.google.com/file/d/1i4Jgp6LvnPMHYz1zamve924MxLeqQZ2u/view?usp=sharing' },
+      { texto: 'Acuerdo de París', url: 'https://drive.google.com/file/d/1Rt9LlnPYNQImkuVGxepshEhM7LR3xh0g/view?usp=sharing' },
+      { texto: 'CITIES', url: 'https://drive.google.com/file/d/1gs25eXsIYR77nYyTYBPGZ0sazYIUvu85/view?usp=sharing' },
+      { texto: 'CMNUCC', url: 'https://drive.google.com/file/d/1JjXL181fKeQTJYyHM3_SF6Sgi7Gx1Ipv/view?usp=sharing' },
+      { texto: 'Infografía ODS 13', url: 'https://drive.google.com/file/d/1GjWr_7RwK2NPI9NiLuRvg5QBg3koj3-W/view?usp=sharing' },
+      { texto: 'Informe ODS 2019', url: 'https://drive.google.com/file/d/1i7tPZb06ErKTdIPqhmRl707dKkvKlhlv/view?usp=sharing' },
+      { texto: 'IPCC_2022', url: 'https://drive.google.com/file/d/1e9yCsNS5DjDAjBBzyE7cQAvAFrIoqBa4/view?usp=sharing' },
+      { texto: 'IPCC_AR6_WGII_SummaryForPolicymakers', url: 'https://drive.google.com/file/d/1TbkemPUOWq-nclOIJG_-RvGMgzIInyiT/view?usp=sharing' },
     ],
   },
   {
