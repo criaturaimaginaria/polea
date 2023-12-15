@@ -15,19 +15,19 @@ const cards = [
   },
   {
     title: 'Nuevos eventos próximamente...',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    text: 'En fechas venideras, se realizarán nuevos eventos imperdibles. Fecha y lugar por confirmar. No te los pierdas!! ',
     img: './images/pen.png',
     enlace: 'enlace.comm',
   },
   {
     title: 'Nuevos eventos próximamente...',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    text: 'En fechas venideras, se realizarán nuevos eventos imperdibles. Fecha y lugar por confirmar. No te los pierdas!! ',
     img: './images/plants.png',
     enlace: 'enlace.comm',
   },
   {
     title: 'Nuevos eventos próximamente...',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    text: 'En fechas venideras, se realizarán nuevos eventos imperdibles. Fecha y lugar por confirmar. No te los pierdas!! ',
     img: './images/pen.png',
     enlace: 'enlace.comm',
   },
