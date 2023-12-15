@@ -70,7 +70,11 @@ const Header = () => {
           <span className={styles.link}>Contáctanos</span>
         </Link>
 
-        <button className={styles.button}>Encuesta</button>
+        <button className={styles.button}>
+          <Link href="https://accionclimaticamexico.budibase.app/app/encuesta#/datos-generales" target="_blank">
+              Encuesta
+          </Link> 
+        </button>
       </div>     
       <div className={styles.mobileHeader}>
          <span>Menú</span>

@@ -3,6 +3,9 @@ import styles from './main.module.css'
 import Link from 'next/link';
 
 const Main = () => {
+
+
+    
   return (
     <div className={styles.main}>
         <div className={styles.layout1}>
@@ -11,7 +14,11 @@ const Main = () => {
                     <div className={styles.layout1Title}>
                         <h1>Fortalecimiento al Marco Jurídico en Materia
                             de Cambio Climático a Nivel Federal</h1>
-                        <button className={styles.button}>Encuesta</button>
+                        <button className={styles.button}>
+                            <Link href="https://accionclimaticamexico.budibase.app/app/encuesta#/datos-generales" target="_blank">
+                               Encuesta
+                            </Link> 
+                        </button>
                     </div>
 
                 </div>
@@ -21,7 +28,11 @@ const Main = () => {
                     </div>
                 </div>
                 <div className={styles.button2container}>
-                    <button className={styles.button2}>Encuesta</button>
+                    <button className={styles.button2}>
+                        <Link href="https://accionclimaticamexico.budibase.app/app/encuesta#/datos-generales" target="_blank">
+                            Encuesta
+                        </Link> 
+                    </button>
                 </div>
 
             </div>

@@ -84,6 +84,12 @@
   font-weight: 400;
 }
 
+.button a {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
 .button:hover {
  opacity: .95;
 }
@@ -364,6 +370,12 @@
   width: 100%;
   margin-bottom: 5vw;
   /* background-color: aqua; */
+}
+
+.button2container a {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-decoration: none;
 }
 
   .button2 {
