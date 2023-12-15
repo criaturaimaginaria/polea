@@ -2,13 +2,25 @@
 import React, { useState, useEffect } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-import styles from './comunication.module.css'
+import styles from './comunication.module.css';
 import useWindowSize from "@/hooks/useWindowSize";
 
 const Comunication = () => {
-
   const windowSize = useWindowSize();
 
+  const handleImageClick = (index) => {
+    const images = [
+      "./images/comunicacion/INF_TRANSVERSALIDAD_02.jpg",
+      "./images/comunicacion/INF_N_CARBONO.jpg",
+      "./images/comunicacion/INF_JC.jpg",
+      "./images/comunicacion/INF_ADAPTACION.jpg",
+    ];
+
+    const imageUrl = images[index];
+
+    // Abre la imagen en una nueva pestaña
+    window.open(imageUrl, "_blank");
+  };
 
   return (
     <div id='comunicacion' className={styles.carouselContainer}>
@@ -30,17 +42,18 @@ const Comunication = () => {
         showArrows={true}
         emulateTouch={true}
         showIndicators={false}
+        onClickItem={handleImageClick}
       >
-        <div className="carousel-item">
+        <div className="carousel-item" style={{ cursor: 'pointer' }}>
           <img src="./images/comunicacion/INF_TRANSVERSALIDAD_02.jpg" alt="Image 1" />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item" style={{ cursor: 'pointer' }}>
           <img src="./images/comunicacion/INF_N_CARBONO.jpg" alt="Image 2" />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item" style={{ cursor: 'pointer' }}>
           <img src="./images/comunicacion/INF_JC.jpg" alt="Image 3" />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item" style={{ cursor: 'pointer' }}>
           <img src="./images/comunicacion/INF_ADAPTACION.jpg" alt="Image 3" />
         </div>
       </Carousel>

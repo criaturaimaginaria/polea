@@ -55,7 +55,10 @@
     font-weight: 300;
   }
   
-
+.carousel-item{
+  cursor: pointer;
+  background-color: #0A2950;
+}
 
 
 
