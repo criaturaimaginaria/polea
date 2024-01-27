@@ -10,39 +10,40 @@ const cards = [
   {
     title: 'Memoria Foro acción climática Agroforestal',
     text: 'El miércoles 14 de junio de 2023, a partir de las 9:30 horas, en la Sala Mural del H. Congreso del Estado de Chiapas, ....',
-    img: './images/pen.png',
+    img: './images/climatico.jpg',
     enlace: 'https://drive.google.com/file/d/1LnBkm6jC83ChDA6_5UrAqpli784Tq9Jv/view?usp=sharing',
   },
   {
-    title: 'Nuevos eventos próximamente...',
-    text: 'En fechas venideras, se realizarán nuevos eventos imperdibles. Fecha y lugar por confirmar. No te los pierdas!! ',
-    img: './images/pen.png',
-    enlace: 'enlace.comm',
+    title: 'Memoria Foro LGCC',
+    text: 'El martes 21 de noviembre de 2023, a partir de las 9:30 a.m., se llevó a cabo en las instalaciones del Palacio Legislativo de San Lázaro, en el Auditorio Aurora Jiménez...',
+    img: './images/Foro LGCC_.jpeg',
+    enlace: 'https://drive.google.com/file/d/1m8YUBSsgpAL_-cGqDzq5mCPH1v509hcN/view?usp=sharing',
+    
   },
   {
-    title: 'Nuevos eventos próximamente...',
-    text: 'En fechas venideras, se realizarán nuevos eventos imperdibles. Fecha y lugar por confirmar. No te los pierdas!! ',
-    img: './images/plants.png',
-    enlace: 'enlace.comm',
+    title: 'Memoria Foro Chiapas',
+    text: 'El martes 14 de noviembre de 2023 a partir de las 9:30 horas, se llevó a cabo, en las instalaciones del Colegio de Ingenieros Civiles de Chiapas, ...',
+    img: './images/Foro MVC.jpeg',
+    enlace: 'https://drive.google.com/file/d/1NiLNFzL3RuCL-gmoo6wcnKcWGcadYKVA/view?usp=sharing',
   },
   {
-    title: 'Nuevos eventos próximamente...',
-    text: 'En fechas venideras, se realizarán nuevos eventos imperdibles. Fecha y lugar por confirmar. No te los pierdas!! ',
-    img: './images/pen.png',
-    enlace: 'enlace.comm',
+    title: 'Memoria Foro acción climática',
+    text: 'El lunes 27 de noviembre de 2023, a partir de las 12:00, en el Salón Charo, en Casa Michoacán, ubicada en Periférico P...',
+    img: './images/Foro_Justicia Climática.jpeg',
+    enlace: 'https://drive.google.com/file/d/19rLZwZHWthVZO7cQ7tisElLr071LAYAy/view?usp=sharing',
   },
-  {
-    title: 'Nuevos eventos próximamente...',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: './images/plants.png',
-    enlace: 'enlace.comm',
-  },
-  {
-    title: 'Nuevos eventos próximamente...',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: './images/pen.png',
-    enlace: 'enlace.comm',
-  },
+  // {
+  //   title: 'Nuevos eventos próximamente...',
+  //   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  //   img: './images/plants.png',
+  //   enlace: 'enlace.comm',
+  // },
+  // {
+  //   title: 'Nuevos eventos próximamente...',
+  //   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  //   img: './images/pen.png',
+  //   enlace: 'enlace.comm',
+  // },
 
 ];
 
