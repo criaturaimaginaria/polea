@@ -9,12 +9,11 @@ const elementos = [
     links: [
       { texto: 'Acuerdo de Escazú ING y ESP', url: 'https://drive.google.com/file/d/1i4Jgp6LvnPMHYz1zamve924MxLeqQZ2u/view?usp=sharing' },
       { texto: 'Acuerdo de París', url: 'https://drive.google.com/file/d/1Rt9LlnPYNQImkuVGxepshEhM7LR3xh0g/view?usp=sharing' },
-      { texto: 'CITES', url: 'https://drive.google.com/file/d/1gs25eXsIYR77nYyTYBPGZ0sazYIUvu85/view?usp=sharing' },
-      { texto: 'CMNUCC', url: 'https://drive.google.com/file/d/1JjXL181fKeQTJYyHM3_SF6Sgi7Gx1Ipv/view?usp=sharing' },
+      { texto: 'CITES - Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres', url: 'https://drive.google.com/file/d/1gs25eXsIYR77nYyTYBPGZ0sazYIUvu85/view?usp=sharing' },
+      { texto: 'CMNUCC - Convención Marco de las Naciones Unidas sobre el Cambio Climático', url: 'https://drive.google.com/file/d/1JjXL181fKeQTJYyHM3_SF6Sgi7Gx1Ipv/view?usp=sharing' },
       { texto: 'Infografía ODS 13', url: 'https://drive.google.com/file/d/1GjWr_7RwK2NPI9NiLuRvg5QBg3koj3-W/view?usp=sharing' },
       { texto: 'Informe ODS 2019', url: 'https://drive.google.com/file/d/1i7tPZb06ErKTdIPqhmRl707dKkvKlhlv/view?usp=sharing' },
-      { texto: 'IPCC 2022', url: 'https://drive.google.com/file/d/1e9yCsNS5DjDAjBBzyE7cQAvAFrIoqBa4/view?usp=sharing' },
-      { texto: 'IPCC AR6 WGII SummaryForPolicymakers', url: 'https://drive.google.com/file/d/1TbkemPUOWq-nclOIJG_-RvGMgzIInyiT/view?usp=sharing' },
+      { texto: 'IPCC 2022 - Summary for Policy Makers', url: 'https://drive.google.com/file/d/1e9yCsNS5DjDAjBBzyE7cQAvAFrIoqBa4/view?usp=sharing' },
     ],
   },
   {
