@@ -27,7 +27,7 @@ const cards = [
     enlace: 'https://drive.google.com/file/d/1NiLNFzL3RuCL-gmoo6wcnKcWGcadYKVA/view?usp=sharing',
   },
   {
-    title: 'Memoria Foro acción climática',
+    title: 'Memoria Foro Morelia',
     text: 'El lunes 27 de noviembre de 2023, a partir de las 12:00, en el Salón Charo, en Casa Michoacán, ubicada en Periférico P...',
     img: './images/Foro_Justicia Climática.jpeg',
     enlace: 'https://drive.google.com/file/d/19rLZwZHWthVZO7cQ7tisElLr071LAYAy/view?usp=sharing',
