@@ -273,39 +273,38 @@
 
 .contactText{
     /* margin-top: min(2vw, 2em); */
-
-    direction: rtl;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: right;
 }
 
 
-  .contactText h2{
-    margin-right:min(1vw, 1em);
-    font-size: min(2.2vw, 2.2em);
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-  }
-  
-  .contactText h2::before{
-    content: '';
-    position: absolute;
-    margin-right: min(-0.6vw, -0.6em);
-    width: min(0.4vw, 0.4em);
-    height: min(3vw, 1.7em); 
-    background-color: #00D4BB
-  }
-  
-  .contactText p{
-    width: 85%;
-    margin-top: min(1.2vw, 1.2em);
-    font-size: min(1vw, 1em);
-    line-height: min(2.1vw, 2.1em);
-    color: #FEFBF4;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-  }
+.contactText h2{
+  margin-right:min(1vw, 1em);
+  font-size: min(2.2vw, 2.2em);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.contactText h2::after{
+  margin-left: 20px;
+  content: '';
+  position: absolute;
+  margin-right: min(-0.6vw, -0.6em);
+  width: min(0.4vw, 0.4em);
+  height: min(3vw, 1.7em); 
+  background-color: #00D4BB
+}
+
+.contactText p{
+  width: 100%;
+  padding-left: 20%;
+  margin-top: min(1.2vw, 1.2em);
+  font-size: min(1vw, 1em);
+  line-height: min(2.1vw, 2.1em);
+  color: #FEFBF4;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
   
 
 
@@ -342,171 +341,170 @@
 
 @media (max-width: 460px) {
 
-    /* esto es solo espacio en blanco */
-    .fillContainer{
-        height: 70vw;
-        /* max-width: 20em; */
-    }
-
-    .contactContainer{
-        margin-top: 10vw;
-    }
-
-    .links ul{
-        /* display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap; */
-        flex-direction: column;
-    }
-
-    .links li {
-        font-size: min(3.2vw, 3.2em);
-        width: 90%;
-        margin-top: min(1.7vw, 1.7em);
-    }
-
-    .links li::before {
-        font-size: min(3vw, 3em);
-        margin-right: 5px; /* Espacio entre el cuadrado y el texto */
-    }
-
-    .links li a{
-        color: #FEFBF4;
-        font-size: min(3vw, 3em);
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-
-    }
-
-    /* este es el div que tendrá el border white */
-    .linksFather{
-        width: 85%;
-        /* max-width: 76em; */
-        margin-left:auto;
-        margin-right: auto;
-        border-right: 0px solid #fff;
-        border-bottom: 0px solid  #fff;
-    }
-
-
-    .titleContainer{
-        margin-top:  min(12vw, 12em);
-    }
-    
-    .titleContainer h2{
-        margin-left: min(1vw, 1em);
-        font-size: min(5vw, 5em);
-    }
-    
-    .titleContainer h2::before{
-        margin-left: min(-0.6vw, -0.6em);
-
-        width: min(1.2vw, 1.2em);
-        height: min(7vw, 7em); 
+      /* esto es solo espacio en blanco */
+      .fillContainer{
+          height: 70vw;
+          /* max-width: 20em; */
       }
-    
-    .titleContainer p{
-        color: #FEFBF4;
-        width: 97%;
-        margin-top:  min(1vw, 1em);
-        font-size: min(3.5vw, 3.5em);
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-    }
+
+      .contactContainer{
+          margin-top: 10vw;
+      }
+
+      .links ul{
+          /* display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap; */
+          flex-direction: column;
+      }
+
+      .links li {
+          font-size: min(3.2vw, 3.2em);
+          width: 90%;
+          margin-top: min(1.7vw, 1.7em);
+      }
+
+      .links li::before {
+          font-size: min(3vw, 3em);
+          margin-right: 5px; /* Espacio entre el cuadrado y el texto */
+      }
+
+      .links li a{
+          color: #FEFBF4;
+          font-size: min(3vw, 3em);
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+
+      }
+
+      /* este es el div que tendrá el border white */
+      .linksFather{
+          width: 85%;
+          /* max-width: 76em; */
+          margin-left:auto;
+          margin-right: auto;
+          border-right: 0px solid #fff;
+          border-bottom: 0px solid  #fff;
+      }
+
+
+      .titleContainer{
+          margin-top:  min(12vw, 12em);
+      }
+      
+      .titleContainer h2{
+          margin-left: min(1vw, 1em);
+          font-size: min(5vw, 5em);
+      }
+      
+      .titleContainer h2::before{
+          margin-left: min(-0.6vw, -0.6em);
+
+          width: min(1.2vw, 1.2em);
+          height: min(7vw, 7em); 
+        }
+      
+      .titleContainer p{
+          color: #FEFBF4;
+          width: 97%;
+          margin-top:  min(1vw, 1em);
+          font-size: min(3.5vw, 3.5em);
+          font-family: 'Poppins', sans-serif;
+          font-weight: 300;
+      }
 
 
 
-    .links button{
-        width: 100%;
+      .links button{
+          width: 100%;
 
-        padding:min(3.5vw, 3.5em);
-        padding-left:min(2vw, 2em);
-        padding-right:min(2vw, 2em);
-        border-bottom-right-radius:min(3.5vw, 3.5em);
-        border-top-left-radius:min(3.5vw, 3.5em);
-        
-        margin-top:min(2vw, 2em);
-        margin-bottom:min(2.5vw, 2.5em);
-    
-        font-size: min(4vw, 4em);
+          padding:min(3.5vw, 3.5em);
+          padding-left:min(2vw, 2em);
+          padding-right:min(2vw, 2em);
+          border-bottom-right-radius:min(3.5vw, 3.5em);
+          border-top-left-radius:min(3.5vw, 3.5em);
+          
+          margin-top:min(2vw, 2em);
+          margin-bottom:min(2.5vw, 2.5em);
+      
+          font-size: min(4vw, 4em);
 
-    }
-    
-
-
-
-
-/* ----------form------------ */
-
-.contact{
-    display: flex;
-    align-items: center;
-    width: 95%;
-    /* max-width: 76em; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-top:min(3vw, 3em);
-    padding-bottom:min(3vw, 3em);
-}
-
-.contact{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 95%;
-    /* max-width: 76em; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-top:min(3vw, 3em);
-    padding-bottom:min(3vw, 3em);
-}
-
-.formNames{
-    display: flex;
-    flex-direction: column;
-}
-
-.imp1{
-    font-size: min(3vw, 3em);
-    width: 100%;
-    margin-right: 10%;
-    padding-bottom: 5px;
-    margin-bottom: min(1.8vw, 1.8em);
-
-}
-.imp2{
-    font-size: min(3vw, 3em);
-    width: 100%;
-    padding-bottom: 5px;
-    margin-bottom: min(1.8vw, 1.8em);
-}
-
-.imp4{
-    font-size: min(3vw, 3em);
-    width: 100%;
-    padding-bottom: 5px;
-    height: 8vw;
-    max-height: 8em;
-}
-
-.contactForm{
-    order: 2;
-    width: 90%;
-}
-
-.contactText{
-    order: 1;
-    width: 90%;
-}
+      }
+      
 
 
 
-.contactText h2{
+
+  /* ----------form------------ */
+
+  .contact{
+      display: flex;
+      align-items: center;
+      width: 95%;
+      /* max-width: 76em; */
+      margin-left: auto;
+      margin-right: auto;
+      padding-top:min(3vw, 3em);
+      padding-bottom:min(3vw, 3em);
+  }
+
+  .contact{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 95%;
+      /* max-width: 76em; */
+      margin-left: auto;
+      margin-right: auto;
+      padding-top:min(3vw, 3em);
+      padding-bottom:min(3vw, 3em);
+  }
+
+  .formNames{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .imp1{
+      font-size: min(3vw, 3em);
+      width: 100%;
+      margin-right: 10%;
+      padding-bottom: 5px;
+      margin-bottom: min(1.8vw, 1.8em);
+
+  }
+  .imp2{
+      font-size: min(3vw, 3em);
+      width: 100%;
+      padding-bottom: 5px;
+      margin-bottom: min(1.8vw, 1.8em);
+  }
+
+  .imp4{
+      font-size: min(3vw, 3em);
+      width: 100%;
+      padding-bottom: 5px;
+      height: 8vw;
+      max-height: 8em;
+  }
+
+  .contactForm{
+      order: 2;
+      width: 90%;
+  }
+
+  .contactText{
+      order: 1;
+      width: 90%;
+  }
+
+  .contactText h2{
     margin-right:min(1vw, 1em);
     font-size: min(5vw, 5em);
   }
   
-  .contactText h2::before{
+  .contactText h2::after{
+    margin-left: 20px;
     margin-right: min(-0.6vw, -0.6em);
 
     width: min(1.2vw, 1.2em);
@@ -516,7 +514,8 @@
   }
   
   .contactText p{
-    width: 85%;
+    width: 100%;
+    padding-left: 20%;
     margin-top: min(1.2vw, 1.2em);
     margin-bottom: min(1.2vw, 1.2em);
     font-size: min(3vw, 3em);
@@ -526,19 +525,18 @@
 
 
   .contactForm button{
-    width: 100%;
+      width: 100%;
 
-    padding:min(3.5vw, 3.5em);
-    padding-left:min(2vw, 2em);
-    padding-right:min(2vw, 2em);
-    border-bottom-right-radius:min(3.5vw, 3.5em);
-    border-top-left-radius:min(3.5vw, 3.5em);
-    
-    margin-top:min(8vw, 8em);
-    margin-bottom:min(7vw, 7em);
+      padding:min(3.5vw, 3.5em);
+      padding-left:min(2vw, 2em);
+      padding-right:min(2vw, 2em);
+      border-bottom-right-radius:min(3.5vw, 3.5em);
+      border-top-left-radius:min(3.5vw, 3.5em);
+      
+      margin-top:min(8vw, 8em);
+      margin-bottom:min(7vw, 7em);
 
-    font-size: min(4vw, 4em);
+      font-size: min(4vw, 4em);
 
-}
-
+  }
 }
